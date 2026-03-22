@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Nicolayev Avendaño Romero</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="noise-overlay"></div>
+
+  <!-- ══════════════════════ HEADER ══════════════════════ -->
+  <header id="header">
+    <nav class="nav-container">
+      <a href="#" class="nav-logo">
+        <svg class="logo-svg" viewBox="0 0 130 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 24 C14 14 22 9 30 15 C36 20 42 29 50 24 C58 19 63 11 71 15 C80 20 83 30 77 36 C71 42 60 37 50 24 C40 11 30 8 22 14 C12 21 14 36 24 36 C31 36 39 30 44 24" stroke="white" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          <path d="M50 24 C57 18 64 15 71 19" stroke="#ffbf00" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+          <line x1="50" y1="10" x2="47" y2="38" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-wordmark">NICOLAYEV</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about"      class="nav-link">Sobre Mí</a></li>
+        <li><a href="#experience" class="nav-link">Experiencia</a></li>
+        <li><a href="#portfolio"  class="nav-link">Portfolio</a></li>
+        <li><a href="#contact"    class="nav-link">Contacto</a></li>
+      </ul>
+
+      <a href="cv-nicolayev-avendano.pdf" download class="btn-cv">
+        <span class="btn-cv-icon">↓</span>
+        <span>Descargar CV</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="mobile-nav" id="mobileNav">
+      <ul>
+        <li><a href="#about"      class="mobile-link">Sobre Mí</a></li>
+        <li><a href="#experience" class="mobile-link">Experiencia</a></li>
+        <li><a href="#portfolio"  class="mobile-link">Portfolio</a></li>
+        <li><a href="#contact"    class="mobile-link">Contacto</a></li>
+      </ul>
+      <a href="cv-nicolayev-avendano.pdf" download class="btn-cv cv-btn-res" style="width:fit-content;margin-top:1rem"><span class="btn-cv-icon">↓</span><span>Descargar CV</span></a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════ HERO ══════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg-lines">
+      <div class="hbl v1"></div><div class="hbl v2"></div>
+      <div class="hbl h1"></div><div class="hbl h2"></div>
+    </div>
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+
+    <div class="hero-inner">
+
+      <!-- LEFT: texto -->
+      <div class="hero-text">
+        <div class="hero-badge anim-up d0">
+          <span class="badge-dot"></span>
+          Diseñador Gráfico Senior · Canales Digitales
+        </div>
+
+        <h1 class="hero-title">
+          <span class="anim-up d1">Nicolayev</span>
+          <span class="anim-up d2"><em>Avendaño</em></span>
+          <span class="anim-up d3">Romero</span>
+        </h1>
+
+        <p class="hero-sub anim-up d4">
+          Transformo marcas en experiencias digitales memorables.
+          Estrategia visual + Tecnología = Resultados medibles.
+        </p>
+
+        <div class="hero-cta anim-up d5">
+          <a href="#portfolio" class="btn-primary">Ver Proyectos</a>
+          <a href="#contact"   class="btn-ghost">Hablemos</a>
+        </div>
+
+        <!--<div class="hero-stats anim-up d6">
+          <div class="stat">
+            <span class="stat-num" data-target="8">0</span><span class="stat-unit">+</span>
+            <span class="stat-label">Años exp.</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="60">0</span><span class="stat-unit">+</span>
+            <span class="stat-label">Proyectos</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="25">0</span><span class="stat-unit">+</span>
+            <span class="stat-label">Marcas LatAm</span>
+          </div>
+        </div>-->
+
+      </div>
+
+      <!-- RIGHT: carrusel -->
+      <div class="hero-carousel anim-up d2">
+        <div class="carousel-track" id="carouselTrack">
+
+          <div class="carousel-slide">
+            <div class="slide-bg" style="background:linear-gradient(135deg,#0424d9,#020873)">
+              <span class="slide-num">01</span>
+            </div>
+            <div class="slide-caption">
+              <span class="slide-cat">Branding</span>
+              <span class="slide-title">Rebrand BancaMóvil LatAm</span>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="slide-bg" style="background:linear-gradient(135deg,#d9a648,#020873)">
+              <span class="slide-num">02</span>
+            </div>
+            <div class="slide-caption">
+              <span class="slide-cat">Social Media</span>
+              <span class="slide-title">Campaña Retail Fashion 360°</span>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="slide-bg" style="background:linear-gradient(135deg,#0439d9,#000814)">
+              <span class="slide-num">03</span>
+            </div>
+            <div class="slide-caption">
+              <span class="slide-cat">UI / UX</span>
+              <span class="slide-title">E-commerce UX Redesign</span>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="slide-bg" style="background:linear-gradient(135deg,#ffbf00,#020873)">
+              <span class="slide-num">04</span>
+            </div>
+            <div class="slide-caption">
+              <span class="slide-cat">Motion Design</span>
+              <span class="slide-title">Animaciones para Streaming</span>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="slide-bg" style="background:linear-gradient(135deg,#0424d9,#d9a648)">
+              <span class="slide-num">05</span>
+            </div>
+            <div class="slide-caption">
+              <span class="slide-cat">Campaña</span>
+              <span class="slide-title">Lanzamiento Producto FMCG</span>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="slide-bg" style="background:linear-gradient(135deg,#020873,#d9a648)">
+              <span class="slide-num">06</span>
+            </div>
+            <div class="slide-caption">
+              <span class="slide-cat">Branding</span>
+              <span class="slide-title">Brand System Startup Tech</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-footer">
+          <div class="carousel-dots" id="carouselDots"></div>
+          <div class="carousel-progress"><div class="carousel-bar" id="carouselBar"></div></div>
+        </div>
+      </div>
+
+    </div><!-- /hero-inner -->
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ ABOUT ══════════════════════ -->
+  <section id="about" class="section-wrap">
+    <div class="section-tag">
+      <span class="tag-n">01</span><span class="tag-bar"></span><span class="tag-lbl">Sobre Mí</span>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-photo reveal-left">
+        <div class="photo-frame">
+          <div class="frame-deco d1"></div>
+          <div class="frame-deco d2"></div>
+          <div class="photo-box">
+            <!-- Reemplaza con: <img src="foto.jpg" alt="Nicolayev"> -->
+            <img src="https://cdn.actualicese.com/wp-content/uploads/2026/02/19091351/Img1-lp-cp-drpn-1.jpg" alt="">
+          </div>
+          <div class="available-badge">
+            <span class="badge-dot"></span>Disponible para proyectos
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text reveal-right">
+        <h2 class="section-title">
+          Diseño que <span class="accent">convierte</span>.<br>
+          Estrategia que <span class="accent">escala</span>.
+        </h2>
+        <p class="body-text">Soy un diseñador gráfico digital, con experiencia en la creación de key visuals impactantes, branding estratégico y contenido para canales digitales como E-mail marketing, redes sociales, display y google ads. Manejo animación 2D básica y edición de video para desarrollar narrativas visuales que conectan con la audiencia. Cuento con conocimientos en UI/UX, diseño web y estructuración de páginas front-end con HTML, CSS Y WordPress. Además, incorporo inteligencia artificial en mi flujo de trabajo para la creación de imágenes, generación de videos y optimización de procesos creativos, potenciando la calidad y eficiencia de mis entregables.</p>
+        <p class="body-text">Siempre estoy explorando nuevas tendencias y herramientas para elevar cada proyecto y aportar valor al crecimiento de las marcas con las que colaboro.</p>
+
+        <div class="skills-wrap">
+          <span class="skill">Brand Identity</span><span class="skill">UI/UX Design</span>
+          <span class="skill">Motion Graphics</span><span class="skill">Social Media</span>
+          <span class="skill">Figma / Adobe CC</span><span class="skill">Design Systems</span>
+          <span class="skill">Campañas Digitales</span><span class="skill">Performance Creativo</span>
+        </div>
+
+        <div class="tools-row">
+          <span class="tools-lbl">Stack:</span>
+          <div class="tools-list">
+            <span class="tool" title="Figma">Fg</span>
+            <span class="tool" title="Illustrator">Ai</span>
+            <span class="tool" title="Photoshop">Ps</span>
+            <span class="tool" title="After Effects">Ae</span>
+            <span class="tool" title="Premiere">Pr</span>
+            <span class="tool" title="InDesign">Id</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ TRAYECTORIA ══════════════════════ -->
+  <section id="experience" class="section-wrap section-alt">
+    <div class="section-tag">
+      <span class="tag-n">02</span><span class="tag-bar"></span><span class="tag-lbl">Trayectoria</span>
+    </div>
+
+    <div class="tray-grid">
+
+      <!-- EXPERIENCIA -->
+      <div class="tray-col reveal-left">
+        <h3 class="col-title"><span class="col-dot blue"></span>Experiencia Laboral</h3>
+        <div class="timeline">
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-date">Ago 2022 — Presente</div>
+              <h4 class="tl-role">Diseñador Gráfico Senior</h4>
+              <p class="tl-co">Actualícese.com · Cali</p>
+              <p class="tl-desc">- Creación de Key Visuals inspirados en briefs creativos y coordinación de despliegues de piezas gráficas y animaciones. <br>
+              - Desarrollo de landing pages y e-commerce en WordPress 
+              con HTML y CSS, optimizando la experiencia del usuario. <br>
+              - Revisión y aseguramiento de la coherencia gráfica con los estándares del manual de marca de la empresa.</p>
+              <div class="tl-tags"><span>Brand Strategy</span><span>Team Lead</span><span>360°</span></div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-date">Feb 2017 — Ago 2022</div>
+              <h4 class="tl-role">Diseñador Gráfico Senior</h4>
+              <p class="tl-co">Actualícese.com · Cali</p>
+              <p class="tl-desc">- Creación de diseños impactantes para diversos canales digitales, incluyendo publicaciones estáticas y animadas para redes sociales. <br>
+              - Diseño de banners para publicidad (ADS) y sitios web, optimizando la experiencia del usuario. <br>
+              - Desarrollo de landing pages y e-commerce en WordPress, utilizando HTML y CSS para una presentación visual efectiva. <br>
+              - Diseño de plantillas de E-mail que capturan la atención y generan interacción. <br>
+              - Producción de animaciones creativas en After Effects y edición de videos para potenciar el contenido visual.</p>
+              <div class="tl-tags"><span>Brand Strategy</span><span>Team Lead</span><span>360°</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- EDUCACIÓN -->
+      <div class="tray-col reveal-up" style="transition-delay:.1s">
+        <h3 class="col-title"><span class="col-dot gold"></span>Educación</h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot gold"></div>
+            <div class="tl-card">
+              <div class="tl-date">2023</div>
+              <h4 class="tl-role">Maestría en Diseño Estratégico</h4>
+              <p class="tl-co">ELISAVA · Barcelona (Online)</p>
+              <p class="tl-desc">Diseño orientado a negocio e innovación. Tesis sobre sistemas visuales omnicanal.</p>
+              <div class="tl-tags gold-tags"><span>Design Strategy</span><span>Innovation</span></div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot gold"></div>
+            <div class="tl-card">
+              <div class="tl-date">2011 — 2016</div>
+              <h4 class="tl-role">Diseño Gráfico · Pregrado</h4>
+              <p class="tl-co">Universidad del Valle · Cali</p>
+              <p class="tl-desc">Comunicación visual, tipografía, fotografía y diseño de interfaces. Grado Meritorio.</p>
+              <div class="tl-tags gold-tags"><span>Diseño Visual</span><span>Tipografía</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CERTIFICACIONES -->
+      <div class="tray-col reveal-right">
+        <h3 class="col-title"><span class="col-dot yellow"></span>Certificaciones</h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot yellow"></div>
+            <div class="tl-card">
+              <div class="tl-date">2022</div>
+              <h4 class="tl-role">Google UX Design Certificate</h4>
+              <p class="tl-co">Google · Coursera</p>
+              <p class="tl-desc">Investigación UX, wireframing, prototipado y pruebas de usabilidad a nivel profesional.</p>
+              <div class="tl-tags yellow-tags"><span>UX Research</span><span>Prototyping</span></div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot yellow"></div>
+            <div class="tl-card">
+              <div class="tl-date">2020</div>
+              <h4 class="tl-role">Motion Design & After Effects</h4>
+              <p class="tl-co">School of Motion · USA</p>
+              <p class="tl-desc">Animación y motion graphics para branding y publicidad digital.</p>
+              <div class="tl-tags yellow-tags"><span>Motion</span><span>After Effects</span></div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot yellow"></div>
+            <div class="tl-card">
+              <div class="tl-date">2019</div>
+              <h4 class="tl-role">Brand Strategy Certification</h4>
+              <p class="tl-co">Domestika Pro</p>
+              <p class="tl-desc">Estrategia de marca, posicionamiento y construcción de identidades digitales.</p>
+              <div class="tl-tags yellow-tags"><span>Brand Strategy</span></div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot yellow"></div>
+            <div class="tl-card">
+              <div class="tl-date">2018</div>
+              <h4 class="tl-role">Figma Advanced Design</h4>
+              <p class="tl-co">Figma · Official Program</p>
+              <p class="tl-desc">Design systems, auto-layout, componentes interactivos y prototipado avanzado.</p>
+              <div class="tl-tags yellow-tags"><span>Figma</span><span>Design Systems</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════ PORTFOLIO ══════════════════════ -->
+  <section id="portfolio" class="section-wrap">
+    <div class="section-tag">
+      <span class="tag-n">03</span><span class="tag-bar"></span><span class="tag-lbl">Portfolio</span>
+    </div>
+
+    <div class="port-header reveal-up">
+      <h2 class="section-title">Proyectos <span class="accent">Seleccionados</span></h2>
+      <div class="filter-bar">
+        <button class="fbtn active" data-filter="all">Todos</button>
+        <button class="fbtn" data-filter="branding">Branding</button>
+        <button class="fbtn" data-filter="social">Social Media</button>
+        <button class="fbtn" data-filter="ui">UI / Web</button>
+        <button class="fbtn" data-filter="motion">Motion</button>
+        <button class="fbtn" data-filter="campaign">Campañas</button>
+      </div>
+    </div>
+
+    <div class="port-grid" id="portGrid">
+
+      <div class="port-card reveal-up d0" data-cat="branding">
+        <div class="card-img"><div class="card-grad" style="background:linear-gradient(135deg,#0424d9,#020873)"><span>01</span></div>
+          <div class="card-ov"><button class="card-btn" onclick="openModal('m1')">Ver Proyecto →</button></div></div>
+        <div class="card-info"><div class="card-cat">Branding</div>
+          <h3 class="card-name">Rebrand BancaMóvil LatAm</h3>
+          <p class="card-desc">Sistema de identidad visual para plataforma fintech. Presencia en 6 países.</p></div>
+      </div>
+
+      <div class="port-card reveal-up d1" data-cat="social">
+        <div class="card-img"><div class="card-grad" style="background:linear-gradient(135deg,#d9a648,#020873)"><span>02</span></div>
+          <div class="card-ov"><button class="card-btn" onclick="openModal('m2')">Ver Proyecto →</button></div></div>
+        <div class="card-info"><div class="card-cat">Social Media</div>
+          <h3 class="card-name">Campaña Retail Fashion 360°</h3>
+          <p class="card-desc">Estrategia visual para lanzamiento de colección. +2M impresiones orgánicas.</p></div>
+      </div>
+
+      <div class="port-card reveal-up d2" data-cat="ui">
+        <div class="card-img"><div class="card-grad" style="background:linear-gradient(135deg,#0439d9,#000814)"><span>03</span></div>
+          <div class="card-ov"><button class="card-btn" onclick="openModal('m3')">Ver Proyecto →</button></div></div>
+        <div class="card-info"><div class="card-cat">UI / Web</div>
+          <h3 class="card-name">E-commerce UX Redesign</h3>
+          <p class="card-desc">Rediseño de experiencia de compra. +34% conversión post-implementación.</p></div>
+      </div>
+
+      <div class="port-card reveal-up d1" data-cat="motion">
+        <div class="card-img"><div class="card-grad" style="background:linear-gradient(135deg,#ffbf00,#020873)"><span>04</span></div>
+          <div class="card-ov"><button class="card-btn" onclick="openModal('m4')">Ver Proyecto →</button></div></div>
+        <div class="card-info"><div class="card-cat">Motion Design</div>
+          <h3 class="card-name">Animaciones para Streaming</h3>
+          <p class="card-desc">Pack de motion graphics para plataforma OTT regional. 40+ animaciones.</p></div>
+      </div>
+
+      <div class="port-card reveal-up d2" data-cat="campaign">
+        <div class="card-img"><div class="card-grad" style="background:linear-gradient(135deg,#0424d9,#d9a648)"><span>05</span></div>
+          <div class="card-ov"><button class="card-btn" onclick="openModal('m5')">Ver Proyecto →</button></div></div>
+        <div class="card-info"><div class="card-cat">Campaña</div>
+          <h3 class="card-name">Lanzamiento Producto FMCG</h3>
+          <p class="card-desc">Campaña de lanzamiento en Colombia, México y Chile. 4 semanas.</p></div>
+      </div>
+
+      <div class="port-card reveal-up d3" data-cat="branding">
+        <div class="card-img"><div class="card-grad" style="background:linear-gradient(135deg,#020873,#d9a648)"><span>06</span></div>
+          <div class="card-ov"><button class="card-btn" onclick="openModal('m6')">Ver Proyecto →</button></div></div>
+        <div class="card-info"><div class="card-cat">Branding</div>
+          <h3 class="card-name">Brand System Startup Tech</h3>
+          <p class="card-desc">Identidad completa para startup de logística. De cero a Serie A en 18 meses.</p></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════ MODALES EN HTML ══════════════════════ -->
+
+  <div class="modal" id="m1">
+    <div class="modal-bg" onclick="closeModal('m1')"></div>
+    <div class="modal-box">
+      <button class="modal-x" onclick="closeModal('m1')">✕</button>
+      <div class="modal-scroll">
+        <div class="modal-hero" style="background:linear-gradient(135deg,#0424d9,#020873)"><span>01</span></div>
+        <div class="modal-cat">Branding</div>
+        <h2 class="modal-title">Rebrand BancaMóvil LatAm</h2>
+        <div class="modal-meta">
+          <div><strong>Cliente</strong><br>BancaMóvil SA</div>
+          <div><strong>Año</strong><br>2023</div>
+          <div><strong>Alcance</strong><br>Identidad Visual Completa</div>
+        </div>
+        <p class="modal-p">Lideré el proceso de rediseño completo de la identidad visual de BancaMóvil, plataforma fintech con presencia en Colombia, México, Perú, Chile, Argentina y Brasil. El proyecto implicó la creación de un sistema de diseño escalable que se adapta a distintas culturas visuales manteniendo consistencia de marca.</p>
+        <p class="modal-p">El nuevo sistema incluyó logotipo y variantes, paleta cromática, tipografía corporativa, iconografía, guidelines para redes sociales, aplicaciones en app móvil y materiales de marketing digital.</p>
+        <div class="modal-tags"><span>Brand Strategy</span><span>Logo Design</span><span>Design System</span><span>Figma</span><span>Adobe CC</span><span>App UI</span></div>
+        <div class="modal-kpis">
+          <div class="kpi"><span class="kv">6</span><span class="kl">Países</span></div>
+          <div class="kpi"><span class="kv">+40%</span><span class="kl">Brand Recall</span></div>
+          <div class="kpi"><span class="kv">3 mo</span><span class="kl">Entrega</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="m2">
+    <div class="modal-bg" onclick="closeModal('m2')"></div>
+    <div class="modal-box">
+      <button class="modal-x" onclick="closeModal('m2')">✕</button>
+      <div class="modal-scroll">
+        <div class="modal-hero" style="background:linear-gradient(135deg,#d9a648,#020873)"><span>02</span></div>
+        <div class="modal-cat">Social Media</div>
+        <h2 class="modal-title">Campaña Retail Fashion 360°</h2>
+        <div class="modal-meta">
+          <div><strong>Cliente</strong><br>Falabella Colombia</div>
+          <div><strong>Año</strong><br>2023</div>
+          <div><strong>Alcance</strong><br>Estrategia Visual & Assets</div>
+        </div>
+        <p class="modal-p">Diseño y producción de la campaña "Nueva Temporada" para Falabella Colombia, abarcando todos los canales digitales: Instagram, Facebook, TikTok, pauta programática y email marketing.</p>
+        <p class="modal-p">La campaña incluyó más de 120 piezas gráficas adaptadas a cada formato, 8 videos cortos para Reels y TikTok, stories interactivos y galería visual especial en el e-commerce.</p>
+        <div class="modal-tags"><span>Social Media Design</span><span>Art Direction</span><span>Video</span><span>Email Design</span><span>Performance Creative</span></div>
+        <div class="modal-kpis">
+          <div class="kpi"><span class="kv">2M+</span><span class="kl">Impresiones</span></div>
+          <div class="kpi"><span class="kv">+28%</span><span class="kl">Engagement</span></div>
+          <div class="kpi"><span class="kv">120+</span><span class="kl">Assets</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="m3">
+    <div class="modal-bg" onclick="closeModal('m3')"></div>
+    <div class="modal-box">
+      <button class="modal-x" onclick="closeModal('m3')">✕</button>
+      <div class="modal-scroll">
+        <div class="modal-hero" style="background:linear-gradient(135deg,#0439d9,#000814)"><span>03</span></div>
+        <div class="modal-cat">UI / UX</div>
+        <h2 class="modal-title">E-commerce UX Redesign</h2>
+        <div class="modal-meta">
+          <div><strong>Cliente</strong><br>Retail Confidencial</div>
+          <div><strong>Año</strong><br>2022</div>
+          <div><strong>Alcance</strong><br>UX Research + UI Design</div>
+        </div>
+        <p class="modal-p">Rediseño completo de la experiencia de compra de un e-commerce con más de 500,000 visitas mensuales. El proceso incluyó auditoría UX, entrevistas con usuarios, mapas de calor, arquitectura de información y prototipado iterativo en Figma.</p>
+        <p class="modal-p">Los cambios se implementaron en fases: home, categorías, ficha de producto y checkout. Resultado: +34% en conversión a los 90 días del lanzamiento.</p>
+        <div class="modal-tags"><span>UX Research</span><span>Wireframing</span><span>Prototyping</span><span>Figma</span><span>A/B Testing</span></div>
+        <div class="modal-kpis">
+          <div class="kpi"><span class="kv">+34%</span><span class="kl">Conversión</span></div>
+          <div class="kpi"><span class="kv">-18%</span><span class="kl">Abandono</span></div>
+          <div class="kpi"><span class="kv">4.8★</span><span class="kl">UX Score</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="m4">
+    <div class="modal-bg" onclick="closeModal('m4')"></div>
+    <div class="modal-box">
+      <button class="modal-x" onclick="closeModal('m4')">✕</button>
+      <div class="modal-scroll">
+        <div class="modal-hero" style="background:linear-gradient(135deg,#ffbf00,#020873)"><span>04</span></div>
+        <div class="modal-cat">Motion Design</div>
+        <h2 class="modal-title">Animaciones para Streaming</h2>
+        <div class="modal-meta">
+          <div><strong>Cliente</strong><br>Plataforma OTT Regional</div>
+          <div><strong>Año</strong><br>2023</div>
+          <div><strong>Alcance</strong><br>Motion Graphics Pack</div>
+        </div>
+        <p class="modal-p">Pack completo de animaciones para plataforma de streaming en su expansión latinoamericana. Incluyó bumpers de marca, transiciones, overlays, animaciones de loading, iconografía animada y sistema de lower thirds.</p>
+        <p class="modal-p">Entregado en formato AE Project + exportaciones para web, mobile y TV conectada.</p>
+        <div class="modal-tags"><span>After Effects</span><span>Motion Graphics</span><span>Brand Animation</span><span>Lottie</span></div>
+        <div class="modal-kpis">
+          <div class="kpi"><span class="kv">40+</span><span class="kl">Animaciones</span></div>
+          <div class="kpi"><span class="kv">3</span><span class="kl">Plataformas</span></div>
+          <div class="kpi"><span class="kv">6 sem</span><span class="kl">Producción</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="m5">
+    <div class="modal-bg" onclick="closeModal('m5')"></div>
+    <div class="modal-box">
+      <button class="modal-x" onclick="closeModal('m5')">✕</button>
+      <div class="modal-scroll">
+        <div class="modal-hero" style="background:linear-gradient(135deg,#0424d9,#d9a648)"><span>05</span></div>
+        <div class="modal-cat">Campaña</div>
+        <h2 class="modal-title">Lanzamiento Producto FMCG</h2>
+        <div class="modal-meta">
+          <div><strong>Cliente</strong><br>Unilever LatAm</div>
+          <div><strong>Año</strong><br>2022</div>
+          <div><strong>Alcance</strong><br>Campaña 360° Digital</div>
+        </div>
+        <p class="modal-p">Dirección creativa de la campaña de lanzamiento en Colombia, México y Chile. "Sé Tú" fue ejecutada en 4 semanas con presencia en redes sociales, YouTube, streaming de audio, pauta programática y puntos de venta digitales.</p>
+        <p class="modal-p">Coordiné la producción simultánea de assets para los 3 mercados, adaptando el mensaje a cada contexto cultural con coherencia visual y tonal.</p>
+        <div class="modal-tags"><span>Campaign Strategy</span><span>Art Direction</span><span>Multi-market</span><span>Social Media</span><span>OOH Digital</span></div>
+        <div class="modal-kpis">
+          <div class="kpi"><span class="kv">3</span><span class="kl">Mercados</span></div>
+          <div class="kpi"><span class="kv">15M+</span><span class="kl">Alcance</span></div>
+          <div class="kpi"><span class="kv">+22%</span><span class="kl">Ventas L1</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="m6">
+    <div class="modal-bg" onclick="closeModal('m6')"></div>
+    <div class="modal-box">
+      <button class="modal-x" onclick="closeModal('m6')">✕</button>
+      <div class="modal-scroll">
+        <div class="modal-hero" style="background:linear-gradient(135deg,#020873,#d9a648)"><span>06</span></div>
+        <div class="modal-cat">Branding</div>
+        <h2 class="modal-title">Brand System Startup Tech</h2>
+        <div class="modal-meta">
+          <div><strong>Cliente</strong><br>LogiCo (Serie A)</div>
+          <div><strong>Año</strong><br>2021</div>
+          <div><strong>Alcance</strong><br>Identity + Design System</div>
+        </div>
+        <p class="modal-p">Identidad visual completa para LogiCo, startup de logística last-mile, desde cero hasta su ronda Serie A. Abarcó naming visual, logo, sistema de marca, UI Kit para la app, pitch deck y materiales para inversores.</p>
+        <p class="modal-p">18 meses después del lanzamiento visual, la compañía cerró una ronda de $12M USD.</p>
+        <div class="modal-tags"><span>Brand Identity</span><span>Startup</span><span>Pitch Deck</span><span>UI Kit</span><span>Design System</span></div>
+        <div class="modal-kpis">
+          <div class="kpi"><span class="kv">$12M</span><span class="kl">Serie A</span></div>
+          <div class="kpi"><span class="kv">18 mo</span><span class="kl">Al cierre</span></div>
+          <div class="kpi"><span class="kv">100%</span><span class="kl">Scalable</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════ CONTACTO ══════════════════════ -->
+  <section id="contact" class="section-wrap section-alt">
+    <div class="section-tag">
+      <span class="tag-n">04</span><span class="tag-bar"></span><span class="tag-lbl">Contacto</span>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <h2 class="section-title">¿Tienes un<br><span class="accent">proyecto?</span><br>Hablemos.</h2>
+        <p class="body-text" style="margin-top:1rem">Disponible para proyectos freelance, consultorías de marca y posiciones en agencias o marcas líderes en LatAm.</p>
+
+        <div class="cinfo-list">
+          <div class="cinfo-item">
+            <span class="cinfo-ico">@</span>
+            <div><span class="cinfo-lbl">Email</span>
+              <a href="mailto:nicolayevromero@gmail.com" class="cinfo-val">nicolayevromero@gmail.com</a></div>
+          </div>
+          <div class="cinfo-item">
+            <span class="cinfo-ico">◎</span>
+            <div><span class="cinfo-lbl">Ubicación</span>
+              <span class="cinfo-val">Cali, Colombia · Disponible Remoto</span></div>
+          </div>
+          <div class="cinfo-item">
+            <span class="cinfo-ico">↗</span>
+            <div><span class="cinfo-lbl">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/nicolayev-avenda%C3%B1o-romero-563391148/" target="_blank" class="cinfo-val">linkedin.com/in/nicolayev</a></div>
+          </div>
+          <div class="cinfo-item">
+            <span class="cinfo-ico">⬡</span>
+            <div><span class="cinfo-lbl">Behance</span>
+              <a href="https://www.behance.net/nicolayev-avendano" target="_blank" class="cinfo-val">behance.net/nicolayev</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal-right">
+        <form class="cform" id="contactForm" action="send.php" method="POST">
+          <div class="form-row">
+            <div class="fg"><label>Nombre completo *</label>
+              <input type="text" name="name" placeholder="Tu nombre" required></div>
+            <div class="fg"><label>Empresa</label>
+              <input type="text" name="company" placeholder="Tu empresa"></div>
+          </div>
+          <div class="form-row">
+            <div class="fg"><label>Email *</label>
+              <input type="email" name="email" placeholder="tu@empresa.com" required></div>
+            <div class="fg"><label>Teléfono</label>
+              <input type="tel" name="phone" placeholder="+57 300 000 0000"></div>
+          </div>
+          <div class="fg">
+            <label>Tu cargo</label>
+            <select name="role">
+              <option value="" disabled selected>Selecciona tu cargo</option>
+              <option>CMO / Chief Marketing Officer</option>
+              <option>Director de Marketing Digital</option>
+              <option>Brand Manager</option>
+              <option>Growth Manager</option>
+              <option>CEO / Fundador</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label>Tipo de proyecto *</label>
+            <select name="service" required>
+              <option value="" disabled selected>¿En qué puedo ayudarte?</option>
+              <option>Branding & Identidad Visual</option>
+              <option>Campaña Digital</option>
+              <option>Social Media Design</option>
+              <option>UI / UX Design</option>
+              <option>Motion Graphics</option>
+              <option>Consultoría de Marca</option>
+              <option>Posición en equipo</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label>Cuéntame sobre tu proyecto *</label>
+            <textarea name="message" rows="5" placeholder="Describe brevemente tu proyecto, objetivos y tiempos..." required></textarea>
+          </div>
+          <div class="fg">
+            <label>Presupuesto estimado (USD)</label>
+            <div class="budget-opts">
+              <label class="brad"><input type="radio" name="budget" value="<2k"><span>&lt; 2.000</span></label>
+              <label class="brad"><input type="radio" name="budget" value="2k-5k"><span>2.000 – 5.000</span></label>
+              <label class="brad"><input type="radio" name="budget" value="5k-15k"><span>5.000 – 15.000</span></label>
+              <label class="brad"><input type="radio" name="budget" value=">15k"><span>&gt; 15.000</span></label>
+            </div>
+          </div>
+          <div class="form-foot">
+            <span class="privacy">🔒 Tu información es privada.</span>
+            <button type="submit" class="btn-send" id="submitBtn">
+              <span id="btnTxt">Enviar Mensaje</span><span>→</span>
+            </button>
+          </div>
+          <div class="form-msg" id="formMsg"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ FOOTER ══════════════════════ -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg viewBox="0 0 80 32" fill="none" style="width:48px;height:20px">
+          <path d="M7 16 C7 10 12 7 17 11 C21 14 25 20 30 16 C35 12 38 7 44 10 C50 13 52 20 47 23 C42 26 36 23 30 16 C24 9 17 7 12 11 C5 16 7 24 13 24 C18 24 22 20 26 16" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <path d="M30 16 C34 12 38 10 44 13" stroke="#ffbf00" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <line x1="30" y1="8" x2="28" y2="24" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span class="footer-tag">Diseño que habla. Estrategia que escala.</span>
+      </div>
+      <div class="footer-links">
+        <a href="#about">Sobre Mí</a>
+        <a href="#experience">Experiencia</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contacto</a>
+      </div>
+      <div class="footer-copy">© 2025 Nicolayev Avendaño Romero · Diseñado con ♦ en Cali, Colombia</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
