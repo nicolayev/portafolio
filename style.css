@@ -86,6 +86,7 @@ input,textarea,select { font-family:inherit; }
 }
 .accent { color:var(--yellow); }
 .body-text { color:var(--t2); line-height:1.8; font-size:1.02rem; margin-bottom:1rem; }
+.body-text b { color:var(--white); font-weight:600; }
 
 .section-tag {
   display:flex; align-items:center; gap:12px; margin-bottom:3rem;
@@ -216,6 +217,7 @@ input,textarea,select { font-family:inherit; }
 }
 .hero-title em {font-style:normal; color: var(--yellow);}
 .hero-sub { color:var(--t2); font-size:clamp(.95rem,1.4vw,1.1rem); line-height:1.75; max-width: 500px; margin-bottom:2rem; }
+.hero-sub b { color:var(--yellow); font-weight:600; }
 .hero-cta { display:flex; gap:.9rem; margin-bottom:2.5rem; flex-wrap:wrap; }
 
 .btn-primary {
@@ -347,14 +349,13 @@ input,textarea,select { font-family:inherit; }
   transition:border-color .2s, color .2s, background .2s;
 }
 .skill:hover { border-color:var(--blue); color:var(--white); background:rgba(4,36,217,.14); }
-.tools-row { display:flex; align-items:center; gap:1rem; margin-top:.5rem; }
+.tools-row { display:flex; align-items:center; gap:1rem; margin-top:.5rem;flex-wrap: wrap; }
 .tools-lbl { font-family:var(--fm); font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--t3); }
-.tools-list { display:flex; gap:7px; }
+.tools-list { display:flex; gap:7px;flex-wrap: wrap; }
 .tool {
   display:flex; align-items:center; justify-content:center;
-  width:34px; height:34px; background:var(--surf); border:1px solid var(--bord);
-  border-radius:var(--r1); font-family:var(--ff); font-size:.72rem; font-weight:700; color:var(--t2);
-  transition:border-color .2s, color .2s;
+  height:34px; background:var(--surf); border:1px solid var(--bord);
+  border-radius:var(--r1); font-family:var(--ff); font-size:.72rem; font-weight:700; color:var(--t2);transition:border-color .2s, color .2s; padding: 0px 8px;
 }
 .tool:hover { border-color:var(--gold); color:var(--gold); }
 
@@ -366,7 +367,7 @@ input,textarea,select { font-family:inherit; }
 #experience > .section-tag { max-width:1200px; margin-left:auto; margin-right:auto; padding:0 2rem; }
 .tray-grid {
   max-width:1200px; margin:0 auto; padding:0 2rem;
-  display:grid; grid-template-columns:1.1fr .95fr .95fr; gap:2.5rem;
+  display:grid; grid-template-columns:1fr 1fr; gap:2.5rem;
 }
 .tray-col {}
 .col-title {
@@ -629,6 +630,6 @@ a.cinfo-val:hover { color:var(--gold); }
 @media (max-width:480px) {
   #hero              { padding:90px 1.2rem 60px; }
   .section-wrap      { padding:4.5rem 1.2rem; }
-  .cform             { padding:1.4rem; }
+  .cform             { padding:1.4rem; max-width: 90%; }
   .modal-scroll      { padding:1.4rem; }
 }
